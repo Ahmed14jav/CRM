@@ -15,6 +15,11 @@ namespace CRM
             _contacts.Add(contactToAdd);
         }
 
+        public void AddContacts(List<Contact> )
+        {
+            _contacts.Add();
+        }
+
         public List<Contact> Contacts
         {
             get
@@ -23,5 +28,7 @@ namespace CRM
             }
         }
         #endregion public methods
+
+        public class ContactAlreadyExist : Exception { };
     }
 }
